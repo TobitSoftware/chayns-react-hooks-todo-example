@@ -1,0 +1,69 @@
+{
+  "name": "chayns-react-hooks-example",
+  "version": "1.0.0",
+  "description": "chayns® + react with hooks example of a simple ToDo-List",
+  "main": "index.js",
+  "scripts": {
+    "start": "webpack-dev-server --config ./webpack/dev.babel.js --mode development --https",
+    "start:http": "webpack-dev-server --config ./webpack/dev.babel.js --mode development",
+    "build": "webpack -p --config ./webpack/prod.babel.js --mode production",
+    "build:staging": "webpack -p --config ./webpack/staging.babel.js --mode development",
+    "postinstall": "node postinstall.js"
+  },
+  "author": "Tobit.Software",
+  "license": "ISC",
+  "devDependencies": {
+    "appcache-webpack-plugin": "^1.4.0",
+    "autoprefixer": "^9.1.5",
+    "babel-core": "^6.26.3",
+    "babel-eslint": "^10.0.1",
+    "babel-loader": "^7.1.5",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-decorators-legacy": "^1.3.5",
+    "babel-plugin-transform-runtime": "^6.23.0",
+    "babel-preset-env": "^1.7.0",
+    "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^1.0.0",
+    "eslint": "^5.8.0",
+    "eslint-config-airbnb": "^17.1.0",
+    "eslint-config-airbnb-base": "^13.1.0",
+    "eslint-plugin-import": "^2.14.0",
+    "eslint-plugin-jsx-a11y": "^6.1.2",
+    "eslint-plugin-react": "^7.11.1",
+    "eslint-plugin-react-hooks": "0.0.0",
+    "html-webpack-plugin": "^3.2.0",
+    "immutable-devtools": "^0.1.3",
+    "node-sass": "^4.9.4",
+    "postcss-loader": "^3.0.0",
+    "prop-types": "^15.6.2",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.23.1",
+    "webpack": "^4.19.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "dependencies": {
+    "@fortawesome/free-brands-svg-icons": "^5.4.2",
+    "@fortawesome/free-regular-svg-icons": "^5.4.2",
+    "@fortawesome/free-solid-svg-icons": "^5.4.2",
+    "chayns-components": "^4.1.5",
+    "immutable": "^3.8.2",
+    "react": "^16.7.0-alpha.0",
+    "react-dom": "^16.7.0-alpha.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "keywords": [
+    "chayns",
+    "react",
+    "hooks",
+    "immutable"
+  ],
+  "bugs": {
+    "url": ""
+  },
+  "homepage": ""
+}

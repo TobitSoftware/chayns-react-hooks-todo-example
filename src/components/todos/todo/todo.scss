@@ -1,0 +1,11 @@
+.todo {
+  display: flex;
+
+  &__delete-icon {
+    cursor: pointer;
+    float: right;
+    align-self: center;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
+}
