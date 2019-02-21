@@ -1,5 +1,6 @@
 .todo {
   display: flex;
+  cursor: default;
 
   &__delete-icon {
     cursor: pointer;

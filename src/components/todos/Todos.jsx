@@ -3,13 +3,14 @@ import { Map, List, fromJS } from 'immutable';
 import Todo from './todo/Todo';
 import AddTodo from '../add-todo/AddTodo';
 import getTodosFromLocalStorage from '../../api/get/todos';
+import LOCALSTORAGE_KEY from '../../constants/localstorage';
 
 // We define the reducer for the useReducer Hook.
 const todosReducer = (todos, action) => {
     switch (action.type) {
         case 'add':
             // For this example we use a random number, u should use a real id.
-            return todos.push(Map({ todo: action.todo, id: Math.random() }));
+            return todos.push(Map({ todo: action.todo, id: Math.random(), creationTime: Date.now() }));
         case 'remove':
             return todos.filter(todo => todo.get('id') !== action.id);
         case 'toggleTodoChecked':
