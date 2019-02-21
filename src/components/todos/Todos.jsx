@@ -52,7 +52,7 @@ export default () => {
     // Similar to componentDidMount and componentDidUpdate. We pass an array as 2nd argument to specify conditions. In this case the callback will only executed if todos changed.
     useEffect(() => {
         // We will save the todos in the localstorage every time the todos changed
-        localStorage.setItem('todos', JSON.stringify(todos.toJS()));
+        localStorage.setItem(LOCALSTORAGE_KEY, JSON.stringify(todos.toJS()));
     }, [todos]);
 
     // We extract the complex logic to render the headline for a more readable return()
